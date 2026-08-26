@@ -60,12 +60,12 @@ Observer le fichier [style.css](style.css) pour comprendre l'utilisation des @la
 | Balise   |  Classe                    | BEM          |
 | -------- | -------------------------- | ------------ |
 | `nav`    | nav-menu                   | Bloc         |
-| `button` | nav-menu\*\*toggle         | Élément      |
-| `button` | nav-menu\*\*toggle--open   | Modificateur |
-| `span`   | nav-menu\*\*hamburger-icon | Élément      |
-| `span`   | nav-menu\*\*libelle        | Élément      |
-| `ul`     | nav-menu\*\*list           | Élément      |
-| `li`     | nav-menu\*\*item           | Élément      |
+| `button` | nav-menu\_\_toggle         | Élément      |
+| `button` | nav-menu\_\_toggle--open   | Modificateur |
+| `span`   | nav-menu\_\_hamburger-icon | Élément      |
+| `span`   | nav-menu\_\_libelle        | Élément      |
+| `ul`     | nav-menu\_\_list           | Élément      |
+| `li`     | nav-menu\_\_item           | Élément      |
 | `a`      | nav-menu\_\_link           | Élément      |
 
 ## 5. ARIA
