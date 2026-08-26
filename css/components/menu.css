@@ -1,0 +1,185 @@
+/* MENU RÉACTIF ACCESSIBLE - BEM et ARIA */
+
+@layer components {
+  /* 1. ARCHITECTURE DESKTOP */
+  .nav-menu {
+    --nav-bg: #ffffff;
+    --nav-text: #020263;
+    --nav-accent: #0066cc;
+    --nav-focus-ring: #ffbf00;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    .nav-menu__list {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu__link {
+      color: var(--nav-text);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
+
+      &:hover {
+        color: var(--nav-accent);
+        border-color: var(--nav-accent);
+      }
+
+      /* WCAG Accessibilité : Indicateur de focus clavier personnalisé et très visible */
+      &:focus-visible {
+        outline: 3px solid var(--nav-focus-ring);
+        outline-offset: 2px;
+        color: var(--nav-accent);
+      }
+    }
+
+    /* Le bouton de contrôle (Masqué sur grand écran) */
+    .nav-menu__toggle {
+      display: none;
+      background: none;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 0.6rem 1rem;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--nav-text);
+      font-weight: 600;
+      font-size: 1rem;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(2, 2, 99, 0.05);
+      }
+
+      &:focus-visible {
+        outline: none;
+        border-color: var(--nav-text);
+        box-shadow: 0 0 0 3px var(--nav-focus-ring);
+      }
+    }
+
+    /* L'icône Hamburger (Structure de base à 3 lignes) */
+    .nav-menu__hamburger-icon {
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 2px;
+      background-color: currentColor;
+      transition: background-color 0.2s ease;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transition:
+          transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+          top 0.25s ease;
+      }
+
+      &::before {
+        top: -6px;
+      }
+      &::after {
+        top: 6px;
+      }
+    }
+  }
+
+  /* 2. LE MODIFICATEUR DE L'ICÔNE (TRANSFORMATION EN X) */
+  /* Déclenché dès que la classe --open est appliquée sur le bouton parent par le JS */
+  .nav-menu__toggle--open {
+    .nav-menu__hamburger-icon {
+      background-color: transparent !important; /* Disparition de la ligne centrale */
+
+      &::before {
+        top: 0 !important;
+        transform: rotate(45deg) !important; /* Rotation de la ligne du haut */
+      }
+
+      &::after {
+        top: 0 !important;
+        transform: rotate(-45deg) !important; /* Rotation de la ligne du bas */
+      }
+    }
+  }
+
+  /* 3. CONFIGURATION RESPONSIVE ET MOBILE */
+  @media (width < 768px) {
+    .nav-menu {
+      position: relative;
+
+      .nav-menu__toggle {
+        display: inline-flex; /* Devient visible sur écran mobile */
+        z-index: 100;
+      }
+
+      /* Menu déroulant sur mobile */
+      .nav-menu__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--nav-bg);
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+
+        /* WCAG Accessibilité : Masqué totalement aux liseuses d'écran et claviers par défaut */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px);
+        transition:
+          opacity 0.25s ease,
+          transform 0.25s ease,
+          visibility 0.25s;
+      }
+
+      .nav-menu__item {
+        width: 100%;
+      }
+
+      .nav-menu__link {
+        display: block;
+        padding: 1rem 2rem;
+        border-bottom: none;
+        border-left: 4px solid transparent;
+
+        &:hover,
+        &:focus-visible {
+          background-color: rgba(0, 102, 204, 0.05);
+          border-left-color: var(--nav-accent);
+        }
+      }
+
+      /* OUVERTURE DU MENU : Changement d'état piloté par l'attribut ARIA */
+      .nav-menu__toggle[aria-expanded="true"] + .nav-menu__list {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+}

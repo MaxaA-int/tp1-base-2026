@@ -1,0 +1,28 @@
+/* STYLE */
+@charset "UTF-8";
+
+/* 1. Déclaration de l'ordre de priorité des couches
+(du moins prioritaire au plus prioritaire) */
+@layer settings, base, layout, components;
+
+/* 2. Importation des fichiers physiques dans les couches virtuelles */
+
+/* Dossier : css/settings/ */
+@import url("css/settings/variables.css") layer(settings);
+
+/* Dossier : css/base/ */
+@import url("css/base/normalize.css") layer(base);
+/* @import url("css/base/typography.css") layer(base); */
+
+/* Dossier : css/layout/ */
+/* @import url("css/layout/grid.css") layer(layout); */
+
+/* Dossier : css/components/ */
+@import url("css/components/menu.css") layer(components);
+/* @import url("css/components/accordeon.css") layer(components); */
+/* @import url("css/components/modale.css") layer(components); */
+
+/* Temporaire - Pour tester une variable définie dans les settings */
+h1 {
+  color: var(--couleur-principale);
+}
