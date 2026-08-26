@@ -47,3 +47,11 @@ p, span {
   font-size: 1rem;
   font-weight: 300;
 }
+
+a {
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
