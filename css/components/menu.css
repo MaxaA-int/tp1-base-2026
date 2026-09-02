@@ -10,7 +10,7 @@
     max-width: 1340px;
     margin: 0 auto 2rem;
 
-    color: var(--Blanc-pure);
+    color: var(--Blanc-Pure);
 
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
       gap: 1rem;
   
       a {
-        color: var(--Blanc-pure);
+        color: var(--Blanc-Pure);
       }
     }
 
