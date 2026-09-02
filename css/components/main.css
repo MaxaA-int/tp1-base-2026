@@ -1,12 +1,46 @@
 @charset "UTF-8";
 
 @layer components {
+  /* Stylisation components généraux */
+
+  button {
+    background-color: var(--Blanc-Pure);
+    border: 0.5px var(--Gris) solid;
+    padding: 1rem 2rem;
+
+    a {
+      color: var(--Noir);
+    }
+
+    &:hover {
+      background-color: var(--Noir);
+
+      a {
+        color: var(--Blanc-Pure);
+      }
+    }
+  }
+
+  /* Mise en place, Mobile First*/
   .main {
     max-width: 1340px;
     margin: 0 auto;
-  }
 
-  .flex {
-    display: flex;
+    .entete {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .entete__titre {
+        margin: 0;
+      }
+
+      .categories__liste {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 0.5rem;
+      }
+    }
   }
 }
