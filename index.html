@@ -77,7 +77,6 @@
 
         <div class="entete__categories categories">
           <ul class="categories__liste flex">
-
             <li class="categories__item">
               <p>
                 <button
@@ -137,13 +136,34 @@
                 </button>
               </p>
             </li>
-
           </ul>
         </div>
-
       </div>
-      <div class="main__filtres-generaux filtres-generaux">
-        <div></div>
+      <div class="main__filtres filtres">
+        <div class="filtres__containeur flex">
+          <div class="filtres__affichage">
+            <input
+              name="filtres-gen"
+              id="filtres-gen"
+              class="screen-reader-only"
+              title="Boutons pour masquer ou afficher les filtres généraux"
+            />
+            <label for="filtres-gen" class="flex">
+              <img src="img/Icone-filtre01.svg" alt="Zone Search" />
+              <p class="filtres-gen__texte">Masquer les filtres</p>
+            </label>
+          </div>
+          <div class="filtres__secondaire">
+            <p>
+              <label for="filtres-sec">Trier Par</label>
+              <select name="filtres-sec" id="filtres-sec">
+                <option value="nouv">Nouveautés</option>
+                <option value="ancien">Anciennetés</option>
+                <option value="popul">Popularité</option>
+              </select>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   </body>

@@ -22,11 +22,18 @@
   }
 
   /* Mise en place, Mobile First*/
+  body {
+      background-color: var(--Blanc-Gris);
+  }
+  
   .main {
-    max-width: 1340px;
+    max-width: 1440px;
     margin: 0 auto;
 
     .entete {
+      max-width: 1340px;
+      margin: 0 auto;
+
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -40,6 +47,19 @@
         padding: 0;
         margin: 0;
         gap: 0.5rem;
+      }
+    }
+
+    .main__filtres {
+      max-width: 100%;
+      background-color: var(--Blanc-Pure);
+      border: 1px solid var(--Gris-Pale);
+
+      .filtres__containeur {
+        max-width: 1340px;
+        margin: 0 auto;
+
+        justify-content: space-between;
       }
     }
   }
