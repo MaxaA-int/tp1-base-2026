@@ -22,7 +22,4 @@
 @import url("css/components/main.css") layer(components);
 /* @import url("css/components/modale.css") layer(components); */
 
-/* Temporaire - Pour tester une variable définie dans les settings */
-h1 {
-  color: var(--couleur-principale);
-}
+
