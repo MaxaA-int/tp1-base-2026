@@ -129,6 +129,28 @@
       .collection {
         grid-column: 3 / -1;
 
+        .collection__chaussures {
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 1rem;
+          justify-content: space-evenly;
+
+          .chaussures__item {
+            max-width: 31%;
+
+            .chaussures__info {
+              background-color: var(--Blanc-Pure);
+              padding: 1rem;
+              flex-direction: column;
+              gap: 0.8rem;
+
+              h3, h4, p {
+                margin: 0;
+              }
+            }
+          }
+        }
+
         .proPage__liste {
           list-style-type: none;
           justify-content: center;
