@@ -147,6 +147,19 @@
               h3, h4, p {
                 margin: 0;
               }
+
+              .chaussures__genre {
+                color: var(--Bleu-Vive);
+              }
+
+              .chaussures__couleurDispo {
+                color: var(--Gris);
+              }
+
+            }
+            
+            button {
+              width: 100%;
             }
           }
         }

@@ -387,15 +387,32 @@
         <div class="contenus__collection collection">
           <!-- Collection - Chaussures -->
           <div class="collection__chaussures chaussures flex">
+            <!-- Chaussures - 01 -->
             <div class="chaussures__item">
-              <img src="img/chaussures/men_AirForceFlynit_01_w700.jpg" alt="" />
+              <picture>
+                <source media="" />
+                <source media="" />
+                <img
+                  src="img/chaussures/men_AirForceFlynit_01_w700.jpg"
+                  alt=""
+                />
+              </picture>
               <div class="chaussures__info flex">
                 <h4 class="chaussures__genre">Hommes</h4>
                 <h3 class="chaussures__nom">Air Force Flyknit</h3>
                 <p class="chaussures__couleursDispo">3 couleurs</p>
-                <h4 class="chaussures__prix">$129,99$</h4>
-
+                <h4 class="chaussures__prix">$129,99</h4>
               </div>
+              <p>
+                <button
+                  name="btnAjtPanier"
+                  id="btnChaussure01"
+                  value="Ajouter au Panier"
+                  title="Bouton pour ajouter l'article au panier"
+                >
+                  <label for="btnChaussure01">Ajouter au Panier</label>
+                </button>
+              </p>
             </div>
           </div>
 
@@ -408,12 +425,9 @@
                     name="btnPageAvant"
                     id="btnPageAvant"
                     value="avant"
-                    ;
                     title="Bouton pour aller à la page avant"
                   >
-                    <label for="btnPageAvant">
-                      <a href="">&lt;</a>
-                    </label>
+                    <label for="btnPageAvant">&lt;</label>
                   </button>
                 </p>
               </li>
@@ -426,9 +440,7 @@
                     value="page01"
                     title="Bouton pour aller à la page 01"
                   >
-                    <label for="btnPage01">
-                      <a href="">1</a>
-                    </label>
+                    <label for="btnPage01">1</label>
                   </button>
                 </p>
               </li>
@@ -441,9 +453,7 @@
                     value="page02"
                     title="Bouton pour aller à la page 02"
                   >
-                    <label for="btnPage02">
-                      <a href="">2</a>
-                    </label>
+                    <label for="btnPage02">2</label>
                   </button>
                 </p>
               </li>
@@ -456,9 +466,7 @@
                     value="page03"
                     title="Bouton pour aller à la page 03"
                   >
-                    <label for="btnPage03">
-                      <a href="">3</a>
-                    </label>
+                    <label for="btnPage03">3</label>
                   </button>
                 </p>
               </li>
@@ -472,9 +480,7 @@
                     ;
                     title="Bouton pour aller à la page apres"
                   >
-                    <label for="btnPageApres">
-                      <a href="">&gt;</a>
-                    </label>
+                    <label for="btnPageApres">&gt;</label>
                   </button>
                 </p>
               </li>
