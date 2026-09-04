@@ -128,6 +128,11 @@
 
       .collection {
         grid-column: 3 / -1;
+
+        .proPage__liste {
+          list-style-type: none;
+          justify-content: center;
+        }
       }
     }
   }
