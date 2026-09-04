@@ -103,7 +103,7 @@
   
           .preferences__liste {
             list-style-type: none;
-            gap: 0.5rem;
+            gap: 0.7rem;
             flex-direction: column;
             padding: 0;
             margin: 0 0 1rem;
