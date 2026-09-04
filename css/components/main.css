@@ -154,6 +154,7 @@
         .proPage__liste {
           list-style-type: none;
           justify-content: center;
+          gap: 1rem;
         }
       }
     }
