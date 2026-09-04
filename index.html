@@ -12,6 +12,7 @@
       <nav class="nav flex">
         <h2 class="nav__titre">Foulée</h2>
 
+        <!-- Navigation Princiaple -->
         <div class="nav__categories">
           <ul class="menu flex">
             <li class="menu__item">
@@ -40,6 +41,7 @@
           </ul>
         </div>
 
+        <!-- Utilitaire Menu (rechercher, panier) -->
         <div class="nav__utilitaire flex">
           <div class="rechercher">
             <input
@@ -61,6 +63,7 @@
     </header>
 
     <main class="main">
+      <!-- Main - Entete -->
       <div class="main__entete entete layout">
         <div class="entete__fil-arianne fil-arianne">
           <a href="" class="fil-arriane__link copyright"> Accueil </a>
@@ -138,6 +141,7 @@
           </ul>
         </div>
       </div>
+      <!-- Main - Filtres -->
       <div class="main__filtres filtres">
         <div class="filtres__containeur flex layout">
           <div class="filtres__affichage">
@@ -164,8 +168,183 @@
           </div>
         </div>
       </div>
+      <!-- Main - Contenus (filtres principaux / préférences et collection) -->
       <div class="main__contenus contenus layout">
         <div class="contenus__filtres preferences flex">
+          <!-- Préférences - Sports -->
+          <div class="preferences__section-item">
+            <div class="preferences__titre flex">
+              <h4 class="">Sports</h4>
+              <div class="preferences__cacher">
+                <input
+                  name="cacher-sport"
+                  id="cacher-sport"
+                  class="screen-reader-only"
+                  title="Bouton pour cacher la section 'Sports'"
+                />
+                <label for="cacher-sport" class="">
+                  <p class="cacher-sport__texte">-</p>
+                </label>
+              </div>
+            </div>
+            <ul class="preferences__liste flex">
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="course"
+                  value="course"
+                  id="course"
+                />
+                <label for="course">Course</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="basketball"
+                  value="basketball"
+                  id="basketball"
+                />
+                <label for="basketball">Basketball</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="football"
+                  value="football"
+                  id="football"
+                />
+                <label for="football">Football</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="training"
+                  value="training"
+                  id="training"
+                />
+                <label for="training">Training</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="lifestyle"
+                  value="lifestyle"
+                  id="lifestyle"
+                />
+                <label for="lifestyle">Lifestyle</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Préférences - Prix -->
+          <div class="preferences__section-item">
+            <div class="preferences__titre flex">
+              <h4 class="">Prix</h4>
+              <div class="preferences__cacher">
+                <input
+                  name="cacher-prix"
+                  id="cacher-prix"
+                  class="screen-reader-only"
+                  title="Bouton pour cacher la section 'Prix'"
+                />
+                <label for="cacher-prix" class="">
+                  <p class="cacher-prix__texte">-</p>
+                </label>
+              </div>
+            </div>
+            <ul class="preferences__liste flex">
+              <li class="preferences__item">
+                <input type="checkbox" name="-80" value="-80" id="-80" />
+                <label for="-80">Moins de 80 $</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="80-120"
+                  value="80-120"
+                  id="80-120"
+                />
+                <label for="80-120">80 $ - 120 $</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="120-180"
+                  value="120-180"
+                  id="120-180"
+                />
+                <label for="120-180">120 $ - 180 $</label>
+              </li>
+              <li class="preferences__item">
+                <input type="checkbox" name="180+" value="180+" id="180+" />
+                <label for="180+">Plus de 180 $</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Préférences - Couleur -->
+          <div class="preferences__section-item">
+            <div class="preferences__titre flex">
+              <h4 class="">Sports</h4>
+              <div class="preferences__cacher">
+                <input
+                  name="cacher-sport"
+                  id="cacher-sport"
+                  class="screen-reader-only"
+                  title="Bouton pour cacher la section 'Sports'"
+                />
+                <label for="cacher-sport" class="">
+                  <p class="cacher-sport__texte">-</p>
+                </label>
+              </div>
+            </div>
+            <ul class="preferences__liste flex">
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="course"
+                  value="course"
+                  id="course"
+                />
+                <label for="course">Course</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="basketball"
+                  value="basketball"
+                  id="basketball"
+                />
+                <label for="basketball">Basketball</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="football"
+                  value="football"
+                  id="football"
+                />
+                <label for="football">Football</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="training"
+                  value="training"
+                  id="training"
+                />
+                <label for="training">Training</label>
+              </li>
+              <li class="preferences__item">
+                <input
+                  type="checkbox"
+                  name="lifestyle"
+                  value="lifestyle"
+                  id="lifestyle"
+                />
+                <label for="lifestyle">Lifestyle</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Préférences - Pointure -->
           <div class="preferences__section-item">
             <div class="preferences__titre flex">
               <h4 class="">Sports</h4>
