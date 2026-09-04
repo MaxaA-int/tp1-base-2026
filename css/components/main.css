@@ -100,18 +100,18 @@
             justify-content: space-between;
             align-items: center;
           }
-  
+
           .preferences__liste {
             list-style-type: none;
             gap: 0.7rem;
             flex-direction: column;
             padding: 0;
             margin: 0 0 1rem;
-  
+
             .preferences__item {
               display: flex;
               gap: 0.5rem;
-  
+
               input {
                 width: 20px;
                 height: 20px;
@@ -124,11 +124,52 @@
             }
           }
         }
-
       }
 
       .collection {
         grid-column: 3 / -1;
+      }
+    }
+  }
+
+  /* Footer Général */
+  .footer {
+    background-color: var(--Gris-Fonce);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    p {
+      color: var(--Bleu-Gris);
+      margin-block: 0;
+    }
+
+    .footer__containeur {
+      align-items: center;
+      justify-content: space-between;
+
+      .footer__droits {
+        h2 {
+          color: var(--Blanc-Pure);
+        }
+      }
+
+      .footer__contact {
+        max-width: 50%;
+        .menu {
+          list-style-type: none;
+          justify-content: left;
+          gap: 1rem;
+          padding-left: 0;
+
+          a {
+            color: var(--Blanc-Pure);
+          }
+        }
+      }
+
+      .footer__reseaux {
+        gap: 1rem;
       }
     }
   }
