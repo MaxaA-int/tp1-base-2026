@@ -30,15 +30,13 @@
         display: flex;
         align-items: center;
     
-        label {
+        .rechercher-input {
           background-color: var(--Gris-Fonce);
           border-radius: 1.5rem;
-          padding: 0.1rem 3rem;
+          border: none;
+          padding: 0.7rem 3rem;
           cursor: pointer;
           width: 100%;
-          text-align: center;
-          justify-content: space-between;
-          gap: 1rem;
     
           p {
             color: var(--Bleu-Gris);

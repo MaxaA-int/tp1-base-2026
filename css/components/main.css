@@ -95,6 +95,7 @@
 
         .preferences__titre {
           justify-content: space-between;
+          align-items: center;
         }
 
         .preferences__liste {
