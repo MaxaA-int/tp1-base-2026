@@ -23,7 +23,7 @@
 
   /* Mise en place, Mobile First*/
   body {
-      background-color: var(--Blanc-Gris);
+    background-color: var(--Blanc-Gris);
   }
 
   .main {
@@ -40,6 +40,10 @@
 
       .entete__titre {
         margin: 0;
+      }
+
+      .nombre-produits {
+        color: var(--Gris-Fonce);
       }
 
       .categories__liste {
@@ -62,16 +66,45 @@
         justify-content: space-between;
         align-items: center;
 
-        .filtres__secondaires p {
-          display: flex;
-          gap: 2rem;
-          align-items: center;
+        .filtres__secondaires {
+          label {
+            color: var(--Bleu-Gris);
+          }
+
+          p {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+          }
         }
 
         select {
           padding: 1rem 2rem;
-          border: 1px solid var(--Noir);
+          border: 1px solid var(--Gris-Pale);
         }
+      }
+    }
+
+    .main__contenus {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+
+      .preferences {
+        grid-column: 1/3;
+        width: 100%;
+
+        .preferences__titre {
+          justify-content: space-between;
+        }
+
+        .preferences__liste {
+          list-style-type: none;
+          padding: 0;
+        }
+      }
+
+      .collection {
+        grid-column: 3 / -1
       }
     }
   }
