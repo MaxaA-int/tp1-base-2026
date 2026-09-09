@@ -42,7 +42,7 @@
 
       .fil-arianne {
         gap: 0.7rem;
-        list-style-type: none;
+
         padding: 0;
       }
 
@@ -55,7 +55,6 @@
       }
 
       .categories__liste {
-        list-style-type: none;
         padding: 0;
         margin: 0;
         gap: 0.5rem;
@@ -108,6 +107,7 @@
         grid-column: 1/3;
         width: 100%;
         flex-direction: column;
+        padding: 0;
 
         .preferences__section-item {
           width: 100%;
@@ -119,7 +119,6 @@
           }
 
           .preferences__liste {
-            list-style-type: none;
             gap: 0.7rem;
             flex-direction: column;
             padding: 0;
@@ -198,7 +197,6 @@
         }
 
         .proPage__liste {
-          list-style-type: none;
           justify-content: center;
           gap: 1rem;
         }
@@ -231,7 +229,6 @@
       .footer__contact {
         max-width: 50%;
         .menu {
-          list-style-type: none;
           justify-content: left;
           gap: 1rem;
           padding-left: 0;

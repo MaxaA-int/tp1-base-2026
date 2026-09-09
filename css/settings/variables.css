@@ -82,6 +82,10 @@ a, button label {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .copyright {
   font-size: 0.875rem;
   
