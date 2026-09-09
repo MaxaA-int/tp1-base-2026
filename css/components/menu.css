@@ -1,4 +1,3 @@
-
 @layer components {
   .header {
     max-width: 1440px;
@@ -15,27 +14,42 @@
     .menu {
       list-style-type: none;
       gap: 1rem;
-  
+
       a {
         color: var(--Blanc-Pure);
       }
     }
 
     .nav__utilitaire {
-      
-      .rechercher {
+      .barre-recherche,
+      .barre-recherche__containeur {
         display: flex;
         align-items: center;
-    
-        .rechercher-input {
+        height: 100%;
+        position: relative;
+
+        input {
           background-color: var(--Gris-Fonce);
           border-radius: 1.5rem;
           border: none;
           padding: 0.7rem 3rem;
           cursor: pointer;
           width: 100%;
-    
-          p {
+          caret-color: var(--Blanc-Pure);
+          color: var(--Blanc-Pure);
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          position: absolute;
+          width: 60px;
+          right: 0;
+
+          img {
+            width: 100%;
             color: var(--Bleu-Gris);
           }
         }

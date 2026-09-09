@@ -44,15 +44,34 @@
         <!-- Utilitaire Menu (rechercher, panier) -->
         <div class="nav__utilitaire flex">
           <div class="rechercher">
-            <input
-              name="search"
-              id="search"
-              class="rechercher-input"
-              title="Espace pour recherhcer un article"
-              aria-label="bouton rechercher"
-              placeholder="Rechercher"
-            />
-            <img src="img/Loupe.svg" alt="Zone Search" />
+            <form
+              action="index.html"
+              class="barre-recherche"
+              method="get"
+              role="search"
+            >
+              <label for="recherche-principale" class="screen-reader-only">
+                Rechercher sur le site
+              </label>
+
+              <div class="barre-recherche__containeur">
+                <input
+                  type="search"
+                  id="recherche-principale"
+                  name="q"
+                  placeholder="Rechercher..."
+                  class="barre-recherche__champ"
+                />
+
+                <button
+                  class="barre-recherche__bouton"
+                  type="submit"
+                  aria-label="Lancer la recherche"
+                >
+                  <img src="img/Loupe.svg" alt="" aria-hidden="true" />
+                </button>
+              </div>
+            </form>
           </div>
 
           <div class="panier">
@@ -385,8 +404,8 @@
               <picture>
                 <source
                   srcset="
-                    img/chaussures/men_AirForceFlynit_01_w300.jpg 1x,
-                    img/chaussures/men_AirForceFlynit_01_w700.jpg 2x
+                    img/chaussures/men_AirForceFlynit_01_w300.jpg 1x 300w,
+                    img/chaussures/men_AirForceFlynit_01_w700.jpg 2x 700w
                   "
                 />
                 <img
