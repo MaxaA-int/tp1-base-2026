@@ -79,6 +79,15 @@
         justify-content: space-between;
         align-items: center;
 
+        .filtres__affichage {
+          display: flex;
+          align-items: center;
+
+          label {
+            cursor: pointer;
+          }
+        }
+
         .filtres__secondaires {
           label {
             color: var(--Bleu-Gris);
