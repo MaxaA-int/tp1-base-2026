@@ -65,10 +65,15 @@
     <main class="main">
       <!-- Main - Entete -->
       <div class="main__entete entete layout">
-        <div class="entete__fil-arianne fil-arianne">
-          <a href="" class="fil-arriane__link copyright"> Accueil </a>
-          <a href="" class="fil-arriane__link copyright"> Chaussure </a>
-        </div>
+        <ul class="entete__fil-arianne fil-arianne flex">
+          <li class="fil-arianne__item">
+            <a href="" class="fil-arriane__link copyright"> Accueil </a>
+          </li>
+          <span>&gt;</span>
+          <li class="fil-arianne__item">
+            <a href="" class="fil-arriane__link copyright"> Chaussure </a>
+          </li>
+        </ul>
 
         <h1 class="entete__titre">Chaussure</h1>
 
@@ -80,63 +85,47 @@
         <div class="entete__categories categories">
           <ul class="categories__liste flex">
             <li class="categories__item">
-              <p>
-                <button
-                  name="btnTous"
-                  id="btnTous"
-                  value="Tous"
-                  title="Bouton pour le filtre 'Tous'"
-                >
-                  <label for="btnTous">
-                    <a href="">Tous</a>
-                  </label>
-                </button>
-              </p>
+              <button
+                name="btnTous"
+                id="btnTous"
+                value="Tous"
+                title="Bouton pour le filtre 'Tous'"
+              >
+                <label for="btnTous">Tous</label>
+              </button>
             </li>
 
             <li class="categories__item">
-              <p>
-                <button
-                  name="btnHommes"
-                  id="btnHommes"
-                  value="Hommes"
-                  title="Bouton pour le filtre 'Hommes'"
-                >
-                  <label for="btnHommes">
-                    <a href="">Hommes</a>
-                  </label>
-                </button>
-              </p>
+              <button
+                name="btnHommes"
+                id="btnHommes"
+                value="Hommes"
+                title="Bouton pour le filtre 'Hommes'"
+              >
+                <label for="btnHommes">Hommes</label>
+              </button>
             </li>
 
             <li class="categories__item">
-              <p>
-                <button
-                  name="btnFemmes"
-                  id="btnFemmes"
-                  value="Femmes"
-                  title="Bouton pour le filtre 'Femmes'"
-                >
-                  <label for="btnFemmes">
-                    <a href="">Femmes</a>
-                  </label>
-                </button>
-              </p>
+              <button
+                name="btnFemmes"
+                id="btnFemmes"
+                value="Femmes"
+                title="Bouton pour le filtre 'Femmes'"
+              >
+                <label for="btnFemmes">Femmes</label>
+              </button>
             </li>
 
             <li class="categories__item">
-              <p>
-                <button
-                  name="btnEnfant"
-                  id="btnEnfant"
-                  value="Enfant"
-                  title="Bouton pour le filtre 'Enfant'"
-                >
-                  <label for="btnEnfant">
-                    <a href="">Enfant</a>
-                  </label>
-                </button>
-              </p>
+              <button
+                name="btnEnfant"
+                id="btnEnfant"
+                value="Enfant"
+                title="Bouton pour le filtre 'Enfant'"
+              >
+                <label for="btnEnfant">Enfants</label>
+              </button>
             </li>
           </ul>
         </div>
@@ -394,11 +383,15 @@
               </span>
 
               <picture>
-                <source media="" />
-                <source media="" />
+                <source
+                  srcset="
+                    img/chaussures/men_AirForceFlynit_01_w300.jpg 1x,
+                    img/chaussures/men_AirForceFlynit_01_w700.jpg 2x
+                  "
+                />
                 <img
                   src="img/chaussures/men_AirForceFlynit_01_w700.jpg"
-                  alt=""
+                  alt="Chaussure Air Force Flyint"
                 />
               </picture>
               <div class="chaussures__info flex">
