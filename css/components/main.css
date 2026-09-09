@@ -15,7 +15,7 @@
     &:hover {
       background-color: var(--Noir);
 
-      a {
+      a, label, h4 {
         color: var(--Blanc-Pure);
       }
     }
@@ -134,9 +134,18 @@
           flex-direction: row;
           gap: 1rem;
           justify-content: space-evenly;
+          margin-top: 2rem;
 
           .chaussures__item {
             max-width: 31%;
+            position: relative;
+
+            .chaussure__nouveaute {
+              position: absolute;
+              background-color: var(--Noir);
+              color: var(--Blanc-Pure);
+              padding-inline: 2rem;
+            }
 
             .chaussures__info {
               background-color: var(--Blanc-Pure);
@@ -160,6 +169,12 @@
             
             button {
               width: 100%;
+              border: var(--Gris-Pale) 1px solid;
+
+              h4 {
+                margin: 0;
+                color: var(--Gris-Pale);
+              }
             }
           }
         }
