@@ -162,8 +162,8 @@
           margin-top: 2rem;
 
           .chaussures__item {
-            max-width: 31%;
             position: relative;
+            margin-top: 1rem;
 
             .chaussure__nouveaute {
               position: absolute;

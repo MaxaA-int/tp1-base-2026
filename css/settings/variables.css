@@ -107,6 +107,10 @@ img {
   margin: 0 50px;
 }
 
+.display-none {
+  display: none;
+}
+
 .screen-reader-only,
 .visually-hidden {
     border: 0;
