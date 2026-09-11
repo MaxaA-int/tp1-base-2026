@@ -10,7 +10,9 @@
   <body>
     <header class="header">
       <nav class="nav flex layout">
-        <h2 class="nav__titre"><a href="" class="Titre__lien lien">Foulée</a></h2>
+        <h2 class="nav__titre">
+          <a href="" class="Titre__lien lien">Foulée</a>
+        </h2>
 
         <!-- Navigation Princiaple -->
         <div class="nav__categories">
@@ -58,7 +60,7 @@
                 <input
                   type="search"
                   id="recherche-principale"
-                  name="q"
+                  name="barre-recherche-input"
                   placeholder="Rechercher..."
                   class="barre-recherche__champ"
                 />
@@ -75,7 +77,14 @@
           </div>
 
           <div class="panier">
-            <img src="img/Panier.svg" alt="Panier" />
+            <button
+              class="panier__bouton visually-hidden"
+              id="btnPanier"
+              name="btnPanier"
+            ></button>
+            <label for="btnPanier" class="flex">
+              <img src="img/Panier.svg" alt="Zone Panier" />
+            </label>
           </div>
         </div>
       </nav>
@@ -870,7 +879,9 @@
       <div class="footer__containeur layout flex">
         <!-- Footer - Droits -->
         <div class="footer__droits">
-          <h2>Foulée</h2>
+          <h2 class="nav__titre">
+            <a href="" class="Titre__lien lien">Foulée</a>
+          </h2>
           <p>&copy; 2017 FOULÉE.</p>
           <p>Tous droits réservés 2017.</p>
         </div>

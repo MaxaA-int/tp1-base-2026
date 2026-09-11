@@ -94,6 +94,11 @@
 
           label {
             cursor: pointer;
+
+            &:hover h4{
+              color: var(--Bleu-Vive);
+              border-bottom: 1px solid var(--Bleu-Vive);
+            }
           }
         }
 
@@ -255,6 +260,10 @@
 
       .footer__reseaux {
         gap: 1rem;
+
+        a:hover img {
+          filter: contrast(300%);
+        }
       }
     }
   }
