@@ -1,53 +1,56 @@
 /* VARIABLES */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /*** Harmoniser le modèle de boîte avec Box-Sizing ***/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-
   /* Couleurs */
   --Bleu-Fonce: #111828;
-  --Bleu-Vive: #1098D4;
-  --Bleu-Gris: #99A1AF;
-  
+  --Bleu-Vive: #1098d4;
+  --Bleu-Gris: #99a1af;
+
   --Noir: #000;
-  --Gris-Fonce: #2A2A2A;
+  --Gris-Fonce: #2a2a2a;
   --Gris: #767676;
-  --Gris-Pale: #DCDCDC;
-  --Blanc-Gris: #F5F5F5;
+  --Gris-Pale: #dcdcdc;
+  --Blanc-Gris: #f5f5f5;
   --Blanc-Pure: #fff;
 
   font-size: 16px;
 }
 
 body {
-  font-family: 'Barlow', 'Barlow Condensed', sans-serif, serif;
-    font-optical-sizing: auto;
+  font-family: "Barlow", "Barlow Condensed", sans-serif, serif;
+  font-optical-sizing: auto;
 }
 
-h1  {
+h1 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 4.5rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-h2, h3, h4, p, a {
+h2,
+h3,
+h4,
+p,
+a {
   font-family: "Barlow", sans-serif;
 
   &:not(p) {
@@ -70,15 +73,19 @@ h4 {
   font-weight: 500;
 }
 
-p, span {
+p,
+span {
   font-size: 1rem;
   font-weight: 300;
 }
 
-a, button label {
-  font-size: 1.125rem;
-  font-weight: 300;
+a,
+button label {
+  &:not(.Titre__lien) {
+    font-size: 1.125rem;
+    font-weight: 300;
 
+  }
   text-decoration: none;
 }
 
@@ -88,13 +95,12 @@ ul {
 
 .copyright {
   font-size: 0.875rem;
-  
   color: var(--Bleu-Gris);
 }
 
 /*** Fluidifier les images ***/
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* Classes - Varibales */
@@ -113,24 +119,24 @@ img {
 
 .screen-reader-only,
 .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .screen-reader-only.focusable:active,
 .screen-reader-only.focusable:focus,
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }

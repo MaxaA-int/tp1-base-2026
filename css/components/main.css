@@ -8,18 +8,24 @@
     border: 0.5px var(--Gris) solid;
     padding: 1rem 2rem;
 
-    a {
-      color: var(--Noir);
-    }
-
     &:hover {
       background-color: var(--Noir);
 
-      a,
       label,
       h4 {
         color: var(--Blanc-Pure);
       }
+    }
+  }
+
+  a.lien {
+    &:not(.fil-arianne__link) {
+      color: var(--Blanc-Pure);
+    }
+
+    &:hover {
+      color: var(--Bleu-Vive);
+      border-bottom: 1px solid var(--Bleu-Vive);
     }
   }
 
@@ -42,8 +48,11 @@
 
       .fil-arianne {
         gap: 0.7rem;
-
         padding: 0;
+
+        /* a.lien {
+          color: var(--Bleu-Gris);
+        } */
       }
 
       .entete__titre {
@@ -241,10 +250,6 @@
           justify-content: left;
           gap: 1rem;
           padding-left: 0;
-
-          a {
-            color: var(--Blanc-Pure);
-          }
         }
       }
 
