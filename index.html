@@ -9,14 +9,14 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav flex layout">
+      <nav class="nav flex layout" aria-label="Navigation principale">
         <h2 class="nav__titre">
           <a href="" class="Titre__lien lien">Foulée</a>
         </h2>
 
         <!-- Navigation Princiaple -->
         <div class="nav__categories">
-          <ul class="menu flex">
+          <ul class="menu flex" id="nav-menu-list">
             <li class="menu__item">
               <a href="" class="menu__lien lien">Hommes</a>
             </li>
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Utilitaire Menu (rechercher, panier) -->
-        <div class="nav__utilitaire flex">
+        <div class="nav__utilitaire flex" id="nav__uti">
           <div class="rechercher">
             <form
               action="index.html"
@@ -86,6 +86,8 @@
               <img src="img/Panier.svg" alt="Zone Panier" />
             </label>
           </div>
+
+          
         </div>
       </nav>
     </header>

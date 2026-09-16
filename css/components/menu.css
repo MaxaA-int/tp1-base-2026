@@ -41,40 +41,72 @@
       input {
         display: none;
       }
-    }
-  }
 
-  .nav__utilitaire {
-    .barre-recherche,
-    .barre-recherche__containeur {
-      display: flex;
-      align-items: center;
-      height: 100%;
       position: relative;
+      .barre-recherche,
+      .barre-recherche__containeur {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
 
-      input {
-        background-color: var(--Gris-Fonce);
-        border-radius: 1.5rem;
-        border: none;
-        padding: 0.7rem 3rem;
-        cursor: pointer;
-        width: 100%;
-        caret-color: var(--Blanc-Pure);
-        color: var(--Blanc-Pure);
+        input {
+          background-color: var(--Gris-Fonce);
+          border-radius: 1.5rem;
+          border: none;
+          padding: 0.7rem 3rem;
+          cursor: pointer;
+          width: 100%;
+          caret-color: var(--Blanc-Pure);
+          color: var(--Blanc-Pure);
+        }
+
+        button {
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          position: absolute;
+          width: 60px;
+          right: 0;
+
+          img {
+            width: 100%;
+            color: var(--Bleu-Gris);
+          }
+        }
       }
 
-      button {
+      .nav__control {
         background-color: transparent;
+        color: var(--Blanc-Pure);
         border: none;
-        padding: 0;
-        cursor: pointer;
-        position: absolute;
-        width: 60px;
-        right: 0;
+        padding: 10px;
+        min-width: 40px;
 
-        img {
-          width: 100%;
+        &:hover,
+        :active {
           color: var(--Bleu-Gris);
+        }
+
+        &:focus-visible {
+          outline-offset: -5px;
+          outline: var(--Bleu-Vive) auto 5px;
+        }
+
+        &::before {
+          display: inline-block;
+          content: "";
+          width: 1em;
+          height: 1em;
+          margin-right: 0.5em;
+          background-image: url(../../img/MenuClose.svg);
+          background-size: auto 1em;
+        }
+      }
+      .nav__control.nav--closed {
+        &::before {
+          background-image: url(../../img/MenuOpen.svg);
         }
       }
     }
@@ -96,6 +128,18 @@
     }
   }
 
+  @media screen and (max-width: 32.975rem) {
+    .js .menu {
+      max-height: 100vh;
+      overflow: hidden;
+      transition: max-height 2s;
+    }
+
+    .js .nav--closed .menu {
+      max-height: 0;
+      transition: max-height 0.5s;
+    }
+  }
   /* Affichage Tablette - 528px */
   @media screen and (min-width: 33rem) {
     .nav {
@@ -106,6 +150,10 @@
       .nav__utilitaire {
         input {
           display: inline;
+        }
+
+        .nav__control {
+          display: none;
         }
       }
     }
