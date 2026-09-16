@@ -7,7 +7,7 @@
 
   .nav {
     max-width: 480px;
-    margin: 0 auto;
+    margin: 0 10px;
     flex-wrap: wrap;
     color: var(--Blanc-Pure);
     justify-content: space-between;
@@ -126,6 +126,7 @@
     }
   }
 
+  /* Affichage MAX Tablette - 527px */
   @media screen and (max-width: 32.975rem) {
     .js .menu {
       max-height: 100vh;

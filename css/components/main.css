@@ -37,7 +37,7 @@
   /* Main Général */
   .main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 10px;
 
     /* SECTION ENTETE */
     .entete {
@@ -45,6 +45,7 @@
       flex-direction: column;
       gap: 1rem;
       margin-block: 2rem;
+      text-align: center;
 
       .fil-arianne {
         gap: 0.7rem;
@@ -65,8 +66,11 @@
 
       .categories__liste {
         padding: 0;
-        margin: 0;
         gap: 0.5rem;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-content: space-around;
 
         button {
           cursor: pointer;
@@ -86,7 +90,8 @@
 
       .filtres__containeur {
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
 
         .filtres__affichage {
           display: flex;
@@ -227,4 +232,50 @@
     }
   }
 }
-  
+
+/* Affichage Tablette - 528px */
+@media screen and (min-width: 33rem) {
+  .main {
+    margin: 0 50px;
+
+    .entete {
+      text-align: left;
+
+      .categories__liste {
+        margin: 0;
+      }
+    }
+
+    .main__filtres {
+      .filtres__containeur {
+      }
+    }
+  }
+}
+
+/* Affichage Grosse Tablette - 750px */
+@media screen and (min-width: 48.875rem) {
+  .main {
+    .entete {
+      .categories__liste {
+        max-width: auto;
+        flex-wrap: nowrap;
+      }
+    }
+
+    .main__filtres {
+      .filtres__containeur {
+        align-items: center;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+/* Affichage Table - 1080px */
+@media screen and (min-width: 67.5rem) {
+  .main {
+
+
+  }
+}
