@@ -78,14 +78,13 @@
 
       .nav__control {
         background-color: transparent;
-        color: var(--Blanc-Pure);
         border: none;
         padding: 10px;
         min-width: 40px;
 
         &:hover,
         :active {
-          color: var(--Bleu-Gris);
+          color: var(--Bleu-Vive);
         }
 
         &:focus-visible {

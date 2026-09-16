@@ -20,6 +20,7 @@
 /* Dossier : css/components/ */
 @import url("css/components/menu.css") layer(components);
 @import url("css/components/main.css") layer(components);
+@import url("css/components/footer.css") layer(components);
 /* @import url("css/components/modale.css") layer(components); */
 
 
