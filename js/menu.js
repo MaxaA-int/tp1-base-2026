@@ -9,14 +9,11 @@
 
 let menu = {
     javascriptEnabled: document.documentElement.classList.add('js'),
-    txtNavClosed: 'Menu',
-    txtNavOpen: 'Fermer',
     tagButton: null,
     tagSpan: null,
     tagNav: document.querySelector('.nav'),
     tagNavUti: document.getElementById('nav__uti'),
     relacherFocus: null,
-    tagLogo: document.getElementById('logo'),
 
     /**
      * Confine la navigation clavier à l'intérieur d'un élément.
@@ -84,7 +81,6 @@ let menu = {
 
         this.tagSpan.className = 'nav__span';
         this.tagSpan.setAttribute('aria-hidden', 'true');
-        // this.tagSpan.innerHTML = this.txtNavClosed;
 
         this.tagNavUti.append(this.tagButton);
 
@@ -95,9 +91,6 @@ let menu = {
         // Fermeture du la navigation par default
         this.tagNav.classList.add('nav--closed');
         this.tagButton.classList.add('nav--closed');
-
-        // Forcer le logo à gauche avevc le JS
-        // this.tagLogo.classList.add('float-left');
 
         // Fermeture au clavier via Échap
         document.addEventListener('keydown', function (e) {
@@ -120,7 +113,6 @@ let menu = {
         this.tagButton.classList.remove('nav--closed');
         this.tagButton.setAttribute('aria-expanded', 'true');
         this.tagButton.setAttribute('aria-label', 'Fermer le menu de navigation');
-        // this.tagSpan.innerHTML = this.txtNavOpen;
 
         // Activer le piège de focus ; déplace le focus au premier élément du menu
         this.relacherFocus = this.piegerFocus(this.tagNav);
@@ -131,7 +123,6 @@ let menu = {
         this.tagButton.classList.add('nav--closed');
         this.tagButton.setAttribute('aria-expanded', 'false');
         this.tagButton.setAttribute('aria-label', 'Ouvrir le menu de navigation');
-        // this.tagSpan.innerHTML = this.txtNavClosed;
 
         // Libérer le piège et rendre le focus au déclencheur (WCAG 2.4.3)
         if (this.relacherFocus) {
