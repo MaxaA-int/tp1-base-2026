@@ -8,6 +8,7 @@
 /* 2. Importation des fichiers physiques dans les couches virtuelles */
 
 /* Dossier : css/settings/ */
+@import url("css/settings/general.css") layer(settings);
 @import url("css/settings/variables.css") layer(settings);
 
 /* Dossier : css/base/ */

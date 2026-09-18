@@ -1,0 +1,160 @@
+/* TYPO & ADAPTATION WEB */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", "Barlow Condensed", sans-serif, serif;
+  font-optical-sizing: auto;
+}
+
+/* Stylisation des balises d'écriture */
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--Bleu-Fonce);
+}
+
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Barlow", sans-serif;
+
+  &:not(p) {
+    text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p,
+span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+a,
+button label {
+  &:not(.Titre__lien) {
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  text-decoration: none;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: var(--Bleu-Gris);
+}
+
+/* CSS Général */
+
+ul {
+  list-style-type: none;
+}
+
+/* Fluidifier les images */
+
+img {
+  max-width: 100%;
+}
+
+/* États des boutons/liens généraux */
+
+button {
+    background-color: var(--Blanc-Pure);
+    border: 0.5px var(--Gris) solid;
+    padding: 1rem 2rem;
+
+    &:hover {
+      background-color: var(--Noir);
+
+      label,
+      h4 {
+        color: var(--Blanc-Pure);
+      }
+    }
+  }
+
+  a.lien {
+    &:not(.fil-arianne__link) {
+      color: var(--Blanc-Pure);
+    }
+
+    &:hover {
+      color: var(--Bleu-Vive);
+      border-bottom: 1px solid var(--Bleu-Vive);
+    }
+  }
+
+/* Classes - Variables */
+
+.flex {
+  display: flex;
+}
+
+.layout {
+  margin: 0 50px;
+}
+
+.display-none {
+  display: none;
+}
+
+.screen-reader-only,
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}

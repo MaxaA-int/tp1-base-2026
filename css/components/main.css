@@ -1,34 +1,6 @@
 @charset "UTF-8";
 
 @layer components {
-  /* Stylisation components généraux */
-
-  button {
-    background-color: var(--Blanc-Pure);
-    border: 0.5px var(--Gris) solid;
-    padding: 1rem 2rem;
-
-    &:hover {
-      background-color: var(--Noir);
-
-      label,
-      h4 {
-        color: var(--Blanc-Pure);
-      }
-    }
-  }
-
-  a.lien {
-    &:not(.fil-arianne__link) {
-      color: var(--Blanc-Pure);
-    }
-
-    &:hover {
-      color: var(--Bleu-Vive);
-      border-bottom: 1px solid var(--Bleu-Vive);
-    }
-  }
-
   /* Mise en place, Mobile First*/
   body {
     background-color: var(--Blanc-Gris);
@@ -177,12 +149,13 @@
           flex-wrap: wrap;
           flex-direction: row;
           gap: 1rem;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           margin-top: 2rem;
 
           .chaussures__item {
             position: relative;
             margin-top: 1rem;
+            flex: 1 1 350px;
 
             .chaussure__nouveaute {
               position: absolute;
@@ -192,7 +165,7 @@
             }
 
             img {
-              max-width: 100%;
+              width: 100%;
               height: auto;
               display: block;
             }
@@ -244,8 +217,6 @@
 /* Affichage Minimum Tablette - 528px */
 @media screen and (min-width: 33rem) {
   .main {
-    
-
     .entete {
       text-align: left;
       margin-inline: 50px;
@@ -256,7 +227,6 @@
     }
 
     .main__filtres {
-      
       .filtres__containeur {
         margin-inline: 50px;
       }
@@ -301,10 +271,7 @@
 /* Affichage Table - 1080px */
 @media screen and (min-width: 67.5rem) {
   .main {
-    
-
     .entete {
-      
     }
   }
 }
