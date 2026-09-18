@@ -191,6 +191,12 @@
               padding-inline: 2rem;
             }
 
+            img {
+              max-width: 100%;
+              height: auto;
+              display: block;
+            }
+
             .chaussures__info {
               background-color: var(--Blanc-Pure);
               padding: 1rem;
@@ -282,6 +288,7 @@
     .main__contenus {
       display: grid;
       grid-template-columns: repeat(11, 1fr);
+      gap: 1rem;
 
       .preferences {
         grid-column: 1/3;
