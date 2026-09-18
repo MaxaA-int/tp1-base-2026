@@ -12,7 +12,7 @@
 
   .footer__containeur {
     max-width: 660px;
-    margin: 0 auto;
+    margin: 0 10px;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
@@ -36,6 +36,7 @@
         justify-content: space-evenly;
         gap: 1rem;
         padding-left: 0;
+        flex-wrap: wrap;
       }
       p {
         text-align: center;
@@ -53,11 +54,19 @@
   }
 }
 
+@media screen and (min-width: 33rem) {
+  .footer {
+
+    .footer__containeur {
+      margin: 0 50px;
+    }
+  }
+} 
+
 @media screen and (min-width: 67.5rem) {
   .footer {
     .footer__containeur {
       max-width: 100%;
-      margin: 0 50px;
       flex-direction: row;
       justify-content: space-between;
 
