@@ -6,14 +6,16 @@ Ceci est ma solution pour le TP1. Ce défi m'a permis de concevoir un ou plusieu
 
 ## Sommaire
 
-- [Présentation](#présentation)
-  - [Le défi : des composants accessibles](#le-défi)
-  - [Liens](#liens)
-- [Mon processus](#mon-processus)
-  - [Technologies utilisées](#technologies-utilisées)
-  - [Ce que j'ai appris](#ce-ce-que-jai-appris)
-  - [Développement continu](#développement-continu)
-- [Auteur](#auteur)
+- [TP1 - (2026)](#tp1---2026)
+  - [Sommaire](#sommaire)
+  - [Présentation](#présentation)
+    - [Le défi : des composants accessibles](#le-défi--des-composants-accessibles)
+    - [Liens](#liens)
+  - [Mon Processus](#mon-processus)
+    - [Technologies utilisées](#technologies-utilisées)
+    - [Ce que j'ai appris](#ce-que-jai-appris)
+    - [Développement continu](#développement-continu)
+  - [Auteur](#auteur)
 
 ## Présentation
 
@@ -28,8 +30,8 @@ Les utilisateurs doivent être capables de :
 
 ### Liens
 
-- URL de la solution : [Lien vers mon dépôt GitHub](https://github.com)
-- URL du site en direct : [Lien vers GitHub Pages](https://github.io)
+- URL de la solution : [Lien vers mon dépôt GitHub](https://github.com/MaxaA-int/tp1-base-2026)
+- URL du site en direct : [Lien vers GitHub Pages](https://maxaa-int.github.io/tp1-base-2026/)
 
 ## Mon Processus
 
@@ -42,8 +44,12 @@ Les utilisateurs doivent être capables de :
 
 ### Ce que j'ai appris
 
+Ce travail pratique m'a permis de faire une révision globale du html, css et javascript. Entre autre, j'ai beaucoup appris sur la sémantique HTML. En effet, vu que ce projet comporte énormément de HTML, j'ai pu connaître certaines contraintes.
+
 ### Développement continu
 
-Pour mes prochains projets, je souhaite approfondir :
+Pour mes prochains projets, je souhaite approfondir : L'utilisation de PHP dans les projets (par pitié)
 
 ## Auteur
+
+Maxime Riverin
