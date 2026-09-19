@@ -23,9 +23,12 @@
         gap: 0.7rem;
         padding: 0;
 
-        /* a.lien {
-          color: var(--Bleu-Gris);
-        } */
+        .fil-arianne__item {
+          &:not(:last-child)::after {
+            content: ">";
+            margin-left: 0.5rem;
+          }
+        }
       }
 
       .entete__titre {
@@ -43,14 +46,6 @@
         max-width: 300px;
         margin: 0 auto;
         justify-content: space-around;
-
-        button {
-          cursor: pointer;
-
-          label {
-            text-transform: uppercase;
-          }
-        }
       }
     }
 
@@ -143,7 +138,6 @@
       }
 
       .collection {
-
         .collection__chaussures {
           flex-wrap: wrap;
           flex-direction: row;
@@ -193,6 +187,7 @@
             button {
               width: 100%;
               border: var(--Gris-Pale) 1px solid;
+              color: var(--Gris-Pale);
 
               h4 {
                 margin: 0;

@@ -68,7 +68,7 @@ span {
 }
 
 a,
-button label {
+button label, button {
   &:not(.Titre__lien) {
     font-size: 1.125rem;
     font-weight: 300;
@@ -99,9 +99,12 @@ button {
     background-color: var(--Blanc-Pure);
     border: 0.5px var(--Gris) solid;
     padding: 1rem 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
 
     &:hover {
       background-color: var(--Noir);
+      color: var(--Blanc-Pure);
 
       label,
       h4 {

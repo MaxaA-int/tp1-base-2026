@@ -11,20 +11,29 @@
 */
 
 document.getElementById('filtres-gen').addEventListener('click', interagirPreferences);
+const arrInputsCacher = document.querySelectorAll('.preferences__cacher input');
+arrInputsCacher.forEach(input => {
+    input.addEventListener('click', interagirCategorie);
+});
 
 function interagirPreferences() {
     const refMenuPreferences = document.getElementById('menuPreferences');
+    const refCollection = document.getElementById('collection-chaussures');
 
-    /* Afficher Preferences */
-    if (refMenuPreferences.classList.contains('display-none')) {
-        refMenuPreferences.classList.remove('display-none');
-        document.getElementById('collection-chaussures').classList.remove('collection-col-entiere');
-        document.getElementById('collection-chaussures').classList.add('collection-col-partiel');
-    }
-    /* Cacher Preferences */
-    else {
-        refMenuPreferences.classList.add('display-none');
-        document.getElementById('collection-chaussures').classList.add('collection-col-entiere');
-        document.getElementById('collection-chaussures').classList.remove('collection-col-partiel');
-    }
+    // true si le menu est actuellement caché → on l'affiche
+    const doitAfficher = refMenuPreferences.classList.contains('display-none');
+
+    refMenuPreferences.classList.toggle('display-none', !doitAfficher);
+    refCollection.classList.toggle('collection-col-partiel', doitAfficher);
+    refCollection.classList.toggle('collection-col-entiere', !doitAfficher);
+}
+
+function interagirCategorie(e) {
+    // 1. Remonter jusqu'à l'ancêtre commun le plus proche
+    const refSection = e.target.closest('.preferences__section-item');
+
+    // 2. Redescendre pour cibler précisément le <ul>
+    const refListeCategorie = refSection.querySelector('.preferences__liste');
+
+    refListeCategorie.classList.toggle('display-none');
 }

@@ -162,7 +162,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  /* font-size: initial; 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
@@ -183,11 +183,11 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
+/* button,
 select {
-  /* 1 */
+  1
   text-transform: none;
-}
+} */
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
