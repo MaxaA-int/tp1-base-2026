@@ -7,7 +7,6 @@
 /* À FAIRE 
 - Transition ?
 - Véritable filtrage ?
-- Validate html
 */
 
 document.getElementById('filtres-gen').addEventListener('click', interagirPreferences);
