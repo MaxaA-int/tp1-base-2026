@@ -135,6 +135,14 @@ button {
   display: none;
 }
 
+.collection-col-partiel {
+  grid-column: 3 / -1;
+}
+
+.collection-col-entiere {
+  grid-column: 1 / -1;
+}
+
 .screen-reader-only,
 .visually-hidden {
   border: 0;

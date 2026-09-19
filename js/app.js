@@ -5,10 +5,9 @@
  */
 
 /* À FAIRE 
-- Cacher Preferences
-- Ajuster Collection
 - Transition ?
 - Véritable filtrage ?
+- Validate html
 */
 
 document.getElementById('filtres-gen').addEventListener('click', interagirPreferences);
@@ -16,10 +15,16 @@ document.getElementById('filtres-gen').addEventListener('click', interagirPrefer
 function interagirPreferences() {
     const refMenuPreferences = document.getElementById('menuPreferences');
 
+    /* Afficher Preferences */
     if (refMenuPreferences.classList.contains('display-none')) {
         refMenuPreferences.classList.remove('display-none');
+        document.getElementById('collection-chaussures').classList.remove('collection-col-entiere');
+        document.getElementById('collection-chaussures').classList.add('collection-col-partiel');
     }
+    /* Cacher Preferences */
     else {
         refMenuPreferences.classList.add('display-none');
+        document.getElementById('collection-chaussures').classList.add('collection-col-entiere');
+        document.getElementById('collection-chaussures').classList.remove('collection-col-partiel');
     }
 }
