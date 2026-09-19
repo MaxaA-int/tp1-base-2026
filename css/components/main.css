@@ -28,6 +28,10 @@
             content: ">";
             margin-left: 0.5rem;
           }
+
+          a {
+            text-transform: none;
+          }
         }
       }
 
@@ -60,6 +64,7 @@
         align-items: flex-start;
         flex-direction: column;
         margin: 0 10px;
+        padding-block: 1rem;
 
         .filtres__affichage {
           display: flex;
@@ -67,8 +72,9 @@
 
           label {
             cursor: pointer;
+            text-transform: uppercase;
 
-            &:hover h4 {
+            &:hover {
               color: var(--Bleu-Vive);
               border-bottom: 1px solid var(--Bleu-Vive);
             }
@@ -154,7 +160,9 @@
               position: absolute;
               background-color: var(--Noir);
               color: var(--Blanc-Pure);
-              padding-inline: 2rem;
+              padding: 1rem 2rem;
+              text-transform: uppercase;
+              font-weight: 600;
             }
 
             img {

@@ -68,7 +68,8 @@ span {
 }
 
 a,
-button label, button {
+button label,
+button {
   &:not(.Titre__lien) {
     font-size: 1.125rem;
     font-weight: 300;
@@ -77,8 +78,8 @@ button label, button {
 }
 
 .copyright {
-    font-size: 0.875rem;
-    color: var(--Bleu-Gris);
+  font-size: 0.875rem;
+  color: var(--Bleu-Gris);
 }
 
 /* CSS Général */
@@ -96,33 +97,33 @@ img {
 /* États des boutons/liens généraux */
 
 button {
-    background-color: var(--Blanc-Pure);
-    border: 0.5px var(--Gris) solid;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    text-transform: uppercase;
+  background-color: var(--Blanc-Pure);
+  border: 0.5px var(--Gris) solid;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
 
-    &:hover {
-      background-color: var(--Noir);
-      color: var(--Blanc-Pure);
+  &:hover {
+    background-color: var(--Noir);
+    color: var(--Blanc-Pure);
 
-      label,
-      h4 {
-        color: var(--Blanc-Pure);
-      }
-    }
-  }
-
-  a.lien {
-    &:not(.fil-arianne__link) {
+    label,
+    h4 {
       color: var(--Blanc-Pure);
     }
-
-    &:hover {
-      color: var(--Bleu-Vive);
-      border-bottom: 1px solid var(--Bleu-Vive);
-    }
   }
+}
+
+a.lien {
+  &:not(.fil-arianne__link) {
+    color: var(--Blanc-Pure);
+  }
+
+  &:hover {
+    color: var(--Bleu-Vive);
+    border-bottom: 1px solid var(--Bleu-Vive);
+  }
+}
 
 /* Classes - Variables */
 
