@@ -46,6 +46,10 @@ Les utilisateurs doivent être capables de :
 
 Ce travail pratique m'a permis de faire une révision globale du html, css et javascript. Entre autre, j'ai beaucoup appris sur la sémantique HTML. En effet, vu que ce projet comporte énormément de HTML, j'ai pu connaître certaines contraintes.
 
+De plus, avec l'utilisation de l'IA afin de corriger les erreurs de sémantique, cela m'a permis de comprendre des erreurs "idiotes" d'HTML classique. Par exemple, la balise `button` n'a pas besoin de `h4` ou de `label`. L'utilisation de `type="checkbox"` si c'est un `input` qui se ferme et s'ouvre. Pas oublier non plus les attributs `alt` sur les images afin de facilité la lecture des lecteurs d'écran.
+
+Ce sont des erreurs que j'ai déjà fait dans le passé, alors je prend la correction comme un rappel.
+
 ### Développement continu
 
 Pour mes prochains projets, je souhaite approfondir : L'utilisation de PHP dans les projets (par pitié)
