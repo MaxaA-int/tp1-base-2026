@@ -59,6 +59,11 @@ h3 {
 h4 {
   font-size: 1rem;
   font-weight: 500;
+
+  &:focus {
+    outline: 1px var(--Bleu-Vive) solid;
+    outline-offset: 3px;
+  }
 }
 
 p,
@@ -111,6 +116,25 @@ button {
     h4 {
       color: var(--Blanc-Pure);
     }
+  }
+
+  &:focus {
+    outline: 1px var(--Bleu-Vive) solid;
+    outline-offset: 3px;
+  }
+}
+.nav {
+
+  .panier:has(button:focus) {
+    outline: 1px solid var(--Bleu-Vive);
+    outline-offset: 3px;
+  }
+}
+
+.main {
+  .filtres__affichage:has(button:focus),
+  .preferences__titre:has(input:focus) {
+    outline: 1px solid var(--Bleu-Vive);
   }
 }
 

@@ -14,6 +14,7 @@ Ceci est ma solution pour le TP1. Ce défi m'a permis de concevoir un ou plusieu
   - [Mon Processus](#mon-processus)
     - [Technologies utilisées](#technologies-utilisées)
     - [Ce que j'ai appris](#ce-que-jai-appris)
+    - [Problématique Survenue](#problématique-survenue)
     - [Développement continu](#développement-continu)
   - [Auteur](#auteur)
 
@@ -49,6 +50,13 @@ Ce travail pratique m'a permis de faire une révision globale du html, css et ja
 De plus, avec l'utilisation de l'IA afin de corriger les erreurs de sémantique, cela m'a permis de comprendre des erreurs "idiotes" d'HTML classique. Par exemple, la balise `button` n'a pas besoin de `h4` ou de `label`. L'utilisation de `type="checkbox"` si c'est un `input` qui se ferme et s'ouvre. Pas oublier non plus les attributs `alt` sur les images afin de facilité la lecture des lecteurs d'écran.
 
 Ce sont des erreurs que j'ai déjà fait dans le passé, alors je prend la correction comme un rappel.
+
+### Problématique Survenue 
+
+La classe css `order` ne change pas le tabindex lors du focus
+![Problématique TabIndex](img/tabindex_prob.png)
+
+À vérifier pour les prochaines fois
 
 ### Développement continu
 
